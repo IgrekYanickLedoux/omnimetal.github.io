@@ -1,0 +1,232 @@
+<style>
+
+
+body {
+    font-family: Verdana, Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #424558;
+}
+
+nav>ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav>ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu {
+    display: none;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    padding: 20px 30px;
+    color: #ffffff;
+}
+
+nav>ul>li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #222538;
+    width: 270px;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.menu-html:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-css:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-javascript:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #BBBBBB;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-html .submenu{
+    background-color: #e44d26;;
+}
+
+.menu-css .submenu{
+    background-color: #0070bb;
+}
+
+.menu-javascript .submenu{
+    background-color: #f1dc4f;
+}
+
+
+.submenu li:hover a{
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+
+.menu-html .submenu li:hover{
+    background-color: rgb(210, 77, 60);
+}
+
+.menu-css .submenu li:hover{
+    background-color: rgb(100, 115, 200);
+}
+
+.menu-javascript .submenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked + ul{
+    display: block;
+
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    min-height: 100vh;
+    grid-gap: 20px;
+
+    color:  white;
+    
+}
+.container{
+    height: 700px;
+}
+
+.vert{
+    background-color: green;
+}
+
+.mauve{
+    background-color: rgb(100, 115, 200);
+}
+
+.orange{
+    background-color: chocolate;
+}
+
+@media screen and (max-width: 780px){
+    
+    .menu-mobile{
+        display: block;
+        color: #ffffff;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+
+
+
+}
+</style>
+
+
+<nav>
+    <label for="menu-mobile" class="menu-mobile">Menu</label>
+    <input type="checkbox" id="menu-mobile" role="button">
+
+    <ul>
+        <li class="menu-html"><a href="#">HTML</a>
+            <ul class="submenu">
+                <li><a href="#">Cours HTML et CSS</a></li>
+                <li><a href="#">Éléments HTML</a></li>
+                <li><a href="#">Attributs HTML</a></li>
+                <li><a href="#">Exercices</a></li>
+            </ul>
+        </li>
+        <li class="menu-css"><a href="#">CSS</a>
+            <ul class="submenu">
+                <li><a href="#">Cours HTML et CSS</a></li>
+                <li><a href="#">Propriétés CSS</a></li>
+                <li><a href="#">Sélecteurs CSS</a></li>
+                <li><a href="#">Exercices</a></li>
+                </li>
+            </ul>
+        <li class="menu-javascript"><a href="#">JavaScript</a>
+            <ul class="submenu">
+                <li><a href="#">Cours JavaScriptS</a></li>
+                <li><a href="#">Fonctions JavaScript</a></li>
+                <li><a href="#">Le DOM</a></li>
+                <li><a href="#">Exercices</a></li>
+            </ul>
+        </li>
+        <li class="menu-contact"><a href="#">Contact</a>
+        </li>
+
+    </ul>
+</nav>

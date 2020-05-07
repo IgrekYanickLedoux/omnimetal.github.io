@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>OmniMétal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- FAV ICON -->
+  <link rel="icon" type="image/png" href="img/OmniMetal-Logo_Icon.png" />
+
+  <!-- IMPORT STYLE SHEETS CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- IMPORT GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet">
+  <!-- IMPORT MES STYLES CSS -->
+  <link rel="stylesheet" href="css/display-grid.css">
+  <link rel="stylesheet" href="css/temoignages-style.css">
+
+  <!-- IMPORT FONT AWSOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Flèche haut ( TOP ) -->
+  <div id="scroll_to_top">
+    <a href="#top"><img src="img/HautPage-Icon.svg" alt="Retourner en haut" /></a>
+  </div>
+  <!-- FIN »»» Flèche haut ( TOP ) -->
+
+
+  <header>
+    <section class="menu-utilitaire">
+      <div class="liens-menu-utilitaire">
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#demande-information">Contact</a></li>
+          <li> <a href="https://www.facebook.com/search/top/?q=omnimetal">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="logo-menu-utilitaire">
+        <div>
+          <img src="img/OmniMetal-Logo-Noir.png" alt="">
+        </div>
+      </div>
+
+      <div class="coordonnees-menu-utilitaire">
+        <a href="tel:8197954443"><i class="fas fa-phone"></i>819 795-4443</a>
+        <a class="courriel" href="mailto:info@omnimetal.com?subject=Demande d'information"> <i
+            class="fas fa-envelope fa-lg"></i>info@omnimetal.com</a>
+      </div>
+
+      <div class="demande-information-menu-utilitaire">
+        <div>
+          <a href="#demande-information">
+            <button>Demande d'information</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="navigation-pincipale">
+
+      <!-- Menu Navigation horizontale -->
+      <nav>
+        <ul>
+          <li class="menu"><a href="#services">Services</a></li>
+          <li class="menu"><a href="#realisations">Réalisations</a></li>
+          <li class="menu"><a href="#soudure-mobile">Soudure mobile</a></li>
+          <li class="menu"><a href="#sous-traitance">Sous-traitance</a></li>
+          <li class="menu"><a href="#mecanique-industrielle">Mécanique industrielle</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="navigation-pincipale-mobile">
+      <nav>
+
+        <!--  TEST MENU DEROULANT AVEC LOGO EN ENTETE....
+        <div class="label-menu-mobile">
+          <div class="logo-menu-mobile">
+            <img src="img/OmniMetal-Logo-Blanc.png" alt="">
+          </div>
+          <div class="menu-menu-mobile">
+            <label for="menu-mobile" class="menu-mobile"><i class="fas fa-bars"></i> Menu</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+          </div>  
+        </div>
+      -->
+
+
+        <label for="menu-mobile" class="menu-mobile"><i class="fas fa-bars"></i> Menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+
+        <ul>
+          <li class="menu"><a href="#services">Services</a></li>
+          <li class="menu"><a href="#realisations">Réalisations</a></li>
+          <li class="menu"><a href="#soudure-mobile">Soudure mobile</a></li>
+          <li class="menu"><a href="#sous-traitance">Sous-traitance</a></li>
+          <li class="menu"><a href="#mecanique-industrielle">Mécanique industrielle</a></li>
+          <li class="menu"><a href="#a-propos">À propos</a></li>
+          <li class="menu"><a href="#temoignages">Témoignages</a></li>
+          <li class="menu"><a href="#demande-information">Contact</a></li>
+          <li class="menu"><a href="#demande-information">Demande d'information</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+
+  <main>
+    <section class="slider">
+      <div class="slider-container">
+        <div class="slider">
+
+          <div class="slide slide1" id="slide1">
+            <div class="caption">
+              <h1><span class="h1-petit">Service de</span><br />soudure<br />mobile</h1>
+              <a href="#soudure-mobile"><button id="">En savoir plus</button></a>
+            </div>
+          </div>
+
+          <div class="slide slide2" id="slide2">
+            <div class="caption">
+              <h1><span class="h1-petit">Service de</span><br />mécanique<br />industrielle</h1>
+              <a href="#mecanique-industrielle"><button id="">En savoir plus</button></a>
+            </div>
+          </div>
+
+          <div class="slide slide3" id="slide3">
+            <div class="caption">
+              <h1><span class="h1-petit">Service de</span><br />sous-<br />traitance</h1>
+              <a href="#sous-traitance"><button id="">En savoir plus</button></a>
+            </div>
+          </div>
+
+          <div class="slide slide1" id="slide1">
+            <div class="caption">
+              <h1><span class="h1-petit">Service de</span><br>soudure mobile</h1>
+              <a href="#soudure-mobile"><button id="">En savoir plus</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="a-propos" id="a-propos">
+      <div class="texte-a-propos">
+        <h1>À propos....</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quo, reprehenderit molestias! Omnis cupiditate minus nesciunt error totam amet, beatae quibusdam numquam
+          hic minima, animi perspiciatis sit ullam praesentium obcaecati quia! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Ex voluptatum impedit ducimus mollitia laudantium voluptates, ipsum praesentium ratione,
+          incidunt possimus qui quaerat vitae porro quas omnis harum reiciendis, aperiam non.</p>
+      </div>
+      <div class="image-a-propos">
+        <img src="img/SoudeurSympathique.png" alt="">
+      </div>
+    </section>
+
+    <section class="soudure-mobile" id="soudure-mobile">
+      <div class="picto-soudure-mobile">
+        <img src="img/Soudure-Mobile-Picto.png" alt="">
+      </div>
+      <div class="texte-soudure-mobile">
+        <h1>Soudure mobile</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat ea, vero cumque dignissimos vitae
+          voluptate aliquid rerum officia non est exceppudiandae quasi aut accusantium, iure asperiores laborum
+          iusto dicta magnam sunt praesentium vel consequuntur, veritatis mollitia debitis, facilis quod.
+          Voluptatum, eligendi?</p>
+      </div>
+    </section>
+
+    <section class="realisations" id="realisations">
+      <div class="texte-realisations">
+        <h1>Nos réalisations</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium nemo aut, facere fugit eius
+          rerum aperiam quos autem, voluptatibus tempore quam officiis deserunt dolorum qui harum deleniti libero
+          quisquam!</p>
+      </div>
+      <div class="images-realisations">
+        <img class="vignette-realisations-1" src="img/Realisations/Vignettes/Vignette-1.jpg" alt="">
+        <img class="vignette-realisations-2" src="img/Realisations/Vignettes/Vignette-2.jpg" alt="">
+        <img class="vignette-realisations-3" src="img/Realisations/Vignettes/Vignette-3.jpg" alt="">
+        <img class="vignette-realisations-4" src="img/Realisations/Vignettes/Vignette-4.jpg" alt="">
+        <img class="vignette-realisations-5" src="img/Realisations/Vignettes/Vignette-5.jpg" alt="">
+        <img class="vignette-realisations-6" src="img/Realisations/Vignettes/Vignette-6.jpg" alt="">
+        <img class="vignette-realisations-7" src="img/Realisations/Vignettes/Vignette-7.jpg" alt="">
+    </section>
+
+    <section class="mecanique-industrielle" id="mecanique-industrielle">
+      <div class="picto-mecanique-industrielle">
+        <img src="img/Mecanique-Industrielle-Picto.png" alt="">
+      </div>
+      <div class="texte-mecanique-industrielle">
+        <h1>Mécanique industrielle</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat ea, vero cumque dignissimos vitae
+          voluptate aliquid rerum officia non est excepturi similique itaque nam delectus suscipit eaque nobis.
+          Placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde cupiditate eius
+          tempore. Sit quia beatae et tempore dolores? Illum incidunt minus ipsa laudantium facere, numquam modi
+          necessitatibus minima fuga!</p>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="image-services">
+        <img src="img/Services_bg.png" alt="">
+      </div>
+      <div class="texte-services">
+        <h1><span class="h1-petit">Nos</span><br>services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+          adipisicing
+          elit. Quo, reprehenderit molestias! Omnis cupiditate minus nesciunt error totam amet, beatae quibusdam
+          numquam
+          hic minima, animi perspiciatis sit ullam praesentium obcaecati quia! Lorem ipsum, dolor sit amet
+          consectetur
+          adipisicing elit. Ex voluptatum impedit ducimus mollitia laudantium voluptates, ipsum praesentium
+          ratione,
+          incidunt possimus qui quaerat vitae porro quas omnis harum reiciendis, aperiam non.</p>
+
+        <!-- Liste des services -->
+        <ul>
+          <li>Modification, fabrication et installation de pièces sur mesure</li>
+          <li>Entretien et prévention</li>
+          <li>Réparation de tracteur, pelle à neige, souffleur</li>
+          <li>Machinerie pour cultivateur</li>
+          <li>Projet pour contracteur</li>
+          <li>Réparation de métaux divers</li>
+          <li>Différents supports et fer forgé</li>
+          <li>Barrière de sécurité</li>
+          <li>Structure métallique</li>
+          <li>Escalier, balcon, rampes de métal</li>
+          <li>Parc à chien, foyer extérieur</li>
+          <li>Clôture, remorque, support à vélo</li>
+          <li>Équipement pour vtt</li>
+          <li>Et bien plus...</li>
+        </ul>
+
+        <h2>Votre projet est le nôtre!</h2>
+        <a href="#demande-information"><button id="">Contactez-nous</button></a>
+      </div>
+    </section>
+
+    <section class="temoignages" id="temoignages">
+      <div class="texte-temoignages">
+        <h1>Ce qu'ils disent de nous</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat ea, vero cumque dignissimos vitae
+          voluptate aliquid rerum officia non est excepturi similique itaque nam delectus suscipit eaque nobis.
+          Placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+      </div>
+
+      <div class="cards-temoignages">
+        <!-- Témoignage 1-->
+        <div class="col">
+          <div class="le-temoignage">
+            <img src="img/Temoignage1.jpg" alt="">
+            <div class="name">Full Name1</div>
+            <div class="name-entreprise">Nom de l'entreprise</div>
+            <div class="etoiles">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nesciunt eum impedit
+              aspernatur? Facere, nemo. Molestias placeat earum asperiores in molestiae eum assumenda!
+              Omnis corrupti ut, sequi dolorem ullam neque?</p>
+          </div>
+        </div>
+
+        <!-- Témoignage 2-->
+        <div class="col">
+          <div class="le-temoignage">
+            <img src="img/Temoignage2.jpg" alt="">
+            <div class="name">Full Name2</div>
+            <div class="name-entreprise">Nom de l'entreprise</div>
+            <div class="etoiles">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nesciunt eum impedit
+              aspernatur? Facere, nemo. Molestias placeat earum asperiores in molestiae eum assumenda!
+              Omnis corrupti ut, sequi dolorem ullam neque?</p>
+          </div>
+        </div>
+
+        <!-- Témoignage 3-->
+        <div class="col">
+          <div class="le-temoignage">
+            <img src="img/Temoignage1.jpg" alt="">
+            <div class="name">Full Name3</div>
+            <div class="name-entreprise">Nom de l'entreprise</div>
+            <div class="etoiles">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nesciunt eum impedit
+              aspernatur? Facere, nemo. Molestias placeat earum asperiores in molestiae eum assumenda!
+              Omnis corrupti ut, sequi dolorem ullam neque?</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sous-traitance" id="sous-traitance">
+      <div class="picto-sous-traitance">
+        <img src="img/Sous-Traitance-Picto.png" alt="">
+      </div>
+      <div class="texte-sous-traitance">
+        <h1>Sous-<br />traitance</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat ea, vero cumque dignissimos vitae
+          voluptate aliquid rerum officia non est excepturi similique itaque nam delectus suscipit eaque nobis.
+          Placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde cupiditate eius
+          tempore. Sit quia beatae et tempore dolores? Illum incidunt minus ipsa laudantium facere, numquam modi
+          necessitatibus minima fuga! </p>
+      </div>
+    </section>
+
+
+    <section class="demande-information" id="demande-information">
+      <div class="contenu-demande-information">
+        <div class="texte-demande-information">
+          <h1>Demande d'information</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quo, reprehenderit molestias! Omnis cupiditate minus nesciunt error totam amet, beatae quibusdam
+            numquam.</p>
+
+          <form class="formulaire-demande-information" action="#" method="post">
+
+            <label for="f_name"><span class="txt-rouge">* </span>Prénom :</label>
+            <input type="text" name="f_name" id="f_name" placeholder="Votre prénom" required="required">
+
+            <label for="l_name"><span class="txt-rouge">* </span>Nom :</label>
+            <input type="text" name="l_name" id="l_name" placeholder="Votre nom de famille" required="required">
+
+            <label for="email"><span class="txt-rouge">* </span>Courriel :</label>
+            <input type="email" name="email" id="email" placeholder="Votre courriel" required="required">
+
+
+            <label for="message"><span class="txt-rouge">* </span>Message</label>
+            <textarea name="message" id="message" cols="20" rows="5" placeholder="Votre message" required></textarea>
+
+            <button id="btn_envoyer">Envoyer</button>
+          </form>
+        </div>
+        <p>Les champs indiqués par une (<span class="txt-rouge"> * </span>) sont obligatoires</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="inscription-infolettre-mobile">
+      <div class="contenu-inscription-infolettre-mobile">
+      
+        <h3>Inscrivez-vous <br />à notre infolettre</h3>
+  
+        <form class="formulaire-demande-infolettre" action="#" method="post">
+          <label for="email"><span class="txt-rouge">* </span>Courriel :</label>
+          <input type="email" name="email" id="email" placeholder="Votre courriel" required="required">
+          <button id="btnSend">S'inscrire</button>
+        </form>
+  
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="pied-page">
+      <div class="logo-coordonnees" id="logo-coordonnees">
+        <div>
+          <img src="img/OmniMetal-Logo-Blanc.png" alt="">
+          <address>
+            <p>
+              25A, rue Lemire <br>St-Lucien, QC <br>J0C 1N0
+            </p>
+          </address>
+
+
+
+        </div>
+      </div>
+      <div class="pied-page-col-2">
+        <div class="menu-acces-rapide">
+          <div>
+            <h3>Accès rapide</h3>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#realisations">Réalisations</a></li>
+              <li><a href="#soudure-mobile">Soudure mobile</a></li>
+              <li><a href="#sous-traitance">Sous-traitance</a></li>
+              <li><a href="#mecanique-industrielle">Mécanique industrielle</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="inscription-infolettre">
+          <h3>Inscrivez-vous <br />à notre infolettre</h3>
+
+          <form class="formulaire-demande-infolettre" action="#" method="post">
+            <label for="email"><span class="txt-rouge">* </span>Courriel :</label>
+            <input type="email" name="email" id="email" placeholder="Votre courriel" required="required">
+            <button id="btnSend">S'inscrire</button>
+          </form>
+
+          <div class="suivez-nous">
+            <p>
+              <a href="https://www.facebook.com/search/top/?q=omnimetal"> Suivez-nous <i
+                  class="fab fa-facebook fa-2x"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>© Omni Métal - Tous droits réservés 2020 - <a
+          href="https://www.facebook.com/IGREK-Conception-Design-2151616328431374/?modal=admin_todo_tour">Conception :
+          IGREK</a>
+      </p>
+    </div>
+
+    <section class="pied-page-mobile">
+      <div class="logo-coordonnees-mobile" id="logo-coordonnees-mobile">
+        <div>
+          <img src="img/OmniMetal-Logo-Noir-2.png" alt="">
+          <address>
+            <p>
+              25A, rue Lemire, St-Lucien, QC J0C 1N0
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="coordonnees-menu-utilitaire-mobile">
+        <p>
+          <a href="tel:8197954443"><i class="fas fa-phone-square fa-4x"></i></a>
+          <a href="mailto:info@omnimetal.com?subject=Demande d'information"> <i
+              class="fas fa-envelope-square fa-4x"></i></a>
+          <a href="https://www.facebook.com/search/top/?q=omnimetal"><i class="fab fa-facebook fa-4x"></i></a>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>© Omni Métal - Tous droits réservés 2020 - <a
+            href="https://www.facebook.com/IGREK-Conception-Design-2151616328431374/?modal=admin_todo_tour">Conception :
+            IGREK</a>
+        </p>
+      </div>
+
+
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

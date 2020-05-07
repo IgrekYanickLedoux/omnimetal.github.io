@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>html/css- cours test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mesStyles.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Menu Horizontal -->
+<!-- 
+  <nav>
+  <ul>
+    <li><a href="blog.html">Notre blogue</a></li>
+    <li><a href="shop.html">La boutique</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+-->
+
+<nav>
+  <div class="table">
+    <ul>
+      <li class="menu-html"><a href="html.html">HTML</a></li>
+      <li class="menu-css"><a href="css.html">CSS</a></li>
+      <li class="menu-javascript"><a href="javascript.html">JavaScript</a></li>
+      <li class="menu-contact"><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </div>
+
+</nav>
+
+
+
+
+  <!-- ceci est un commentaire -->
+
+
+  <p class="para1">Voici un paragraphe1.</p>
+  <p class="para1">Voici un paragraphe2.</p>
+  <p class="para1">Voici un paragraphe3.</p>
+  <p class="para1">Voici un paragraphe4.</p>
+
+  <p class="para1">Voici un paragraphe5.</p>
+
+  <audio controls>
+    <source src="audio/2-02 Lumières de vie 1.m4a">
+    </source>
+  </audio>
+
+  <!-- Tableaux
+    table = tableau
+    tr = table row
+    td = table data
+  -->
+
+    <!-- Tableau -->
+
+    <table>
+      <!-- header Entete du tableau-->
+      <thead>
+        <tr>
+          <th>Entete 1</th>
+          <th>Entete 2</th>
+          <th>Entete 3</th>
+        </tr>
+      </thead>
+
+      <!-- Body coprs du tableu-->
+      <tbody> 
+        <tr>
+          <td colspan="2">Cellule 1</td>
+          <td rowspan="2">Cellule 2</td>
+        </tr>
+        <tr>
+          <td>Cellule 4</td>
+          <td>Cellule 5</td>
+        </tr>
+      </tbody>
+
+      <!-- Footer pied du tableau-->
+      <tfoot>
+        <tr>
+          <td>5</td>
+          <td>7</td>
+          <td>9</td>
+        </tr>
+      </tfoot>
+    </table>
+
+<!-- Formulaires -->
+
+<form action="traitement.php" method="POST">
+  <p>
+<fieldset>
+  <legend> Information essentielles</legend>
+    <label for="pseudo">
+      Entrez votre pseudo :
+    </label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="Pierre" required="required">
+    <br/><br/>
+    <label for="pass">
+      Entrez votre mot de passe :
+    </label>
+</fieldset>
+
+
+<fieldset>
+  <legend> Information essentielles</legend>
+    <input type="password" name="pass" id="pass">
+    <br/><br/>
+    <label for="email">
+      Entrez votre mot courriel :
+    </label>
+    <input type="email" name="email" id="email">
+    <br/><br/>
+    <label for="site">
+      Entrez votre l'adresse de votre site internet :
+    </label>
+    <input type="url" name="site" id="site">
+    <br/><br/>
+    <label for="telephone">
+      Entrez votre numéro de téléphone :
+    </label>
+    <input type="tel" name="telephone" id="telephone">
+  </fieldset>
+
+    <br/><br/>
+    <label for="message">
+      Entrez votre message
+    </label>
+    <textarea name="message" id="message" cols="" rows=""></textarea>
+    <br/><br/>    <br/><br/>
+
+    Quels sont vos sports favoris ?
+    <br/>
+    <input type="checkbox" name="course" id="course">
+    <label for="course">Course à pied</label>
+    <br/>
+    <input type="checkbox" name="ski" id="ski" checked="checked">
+    <label for="ski">Ski de fond</label>
+    <br/>
+    <input type="checkbox" name="soccer" id="soccer">
+    <label for="soccer">Soccer</label>
+    <br/>
+    <input type="checkbox" name="natation" id="natation">
+    <label for="natation">Natation</label>
+    <br/>
+
+    <br/>
+
+    Quelle viennoiserie préférez-vous ?
+    <br/>
+    <input type="radio" name="viennoiserie" value="croissant" id="croissant" checked="checked">
+    <label for="croissant">Les croissants</label>
+    <br/>
+    <input type="radio" name="viennoiserie" value="muffin" id="muffin">
+    <label for="muffin">Les muffins</label>
+    <br/>
+    <input type="radio" name="viennoiserie" value="chocolatine" id="chocolatine">
+    <label for="chocolatine">Les chocolatines</label>
+    <br/>
+    <input type="radio" name="viennoiserie" value="raisin" id="raisin">
+    <label for="raisin">Les pains aux raisins</label>
+    <br/><br/><br/>
+
+    <!-- Liste déroulante -->
+    Choisissez votre pays de provenance :
+    <select name="pays" id="pays">
+      <optgroup label="Europe">
+        <option value="france">France</option>
+        <option value="irlande">Irlande</option>
+        <option value="italie">Italie</option>  
+      </optgroup>
+
+      <optgroup label="Amérique">
+        <option value="canada">Canada</option>
+        <option value="usa">États-Unis</option>  
+      </optgroup>
+
+      <optgroup label="Asie">
+        <option value="japon">Japon</option>
+        <option value="chine">Chine</option>
+      </optgroup>
+    </select>
+    <br/><br/><br/>
+
+    <input type="submit" value="Transmettre">
+  </p>
+
+
+
+</form>
+
+
+
+
+
+
+  </table>
+
+
+  <img src="img/OmniMetal-Logo-Noir.svg" title="Logo de l,entreprise Omnimetal" alt="logo OmniMetal">
+  <img src="img/OmniMetal-Logo-Noir.svg" title="Logo de l,entreprise Omnimetal" alt="logo OmniMetal">
+  <img src="img/OmniMetal-Logo-Noir.svg" title="Logo de l,entreprise Omnimetal" alt="logo OmniMetal">
+  <img src="img/OmniMetal-Logo-Noir.svg" title="Logo de l,entreprise Omnimetal" alt="logo OmniMetal">
+
+
+  <!-- <p class="para2">Un deuxieme paragraphe tout simple 2.</p>
+
+  <p class="para3">Un troisieme paragraphe long Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis
+    nesciunt iusto qui, ipsa hic minima ad rerum deserunt esse error officia, culpa aliquam. Nemo eos cupiditate quasi
+    facere quo3.   </p>
+
+  <p class="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore, assumenda veritatis nobis, eum tempore earum laborum quas praesentium quae tenetur aperiam vel natus neque debitis, explicabo non cumque a.
+  </p>
+-->
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

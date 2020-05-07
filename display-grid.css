@@ -1,0 +1,1361 @@
+* {
+    box-sizing: border-box;
+}
+
+*,
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-family: 'Oswald', sans-serif;
+    color: #dfe0e2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: 95px;
+    line-height: 93px;
+    margin-bottom: 20px;
+    color: #6f6d6e;
+}
+
+.h1-petit {
+    font-size: 30px;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.services h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.menu-acces-rapide h3,
+.inscription-infolettre h3 {
+    color: #6f6d6e;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.txt-rouge {
+    color: #ff002c;
+}
+
+.slider h1 {
+    color: #dfe0e2;
+    text-shadow: 0px 0px 5px #262626;
+    margin-bottom: 0;
+}
+
+.menu-utilitaire button {
+    padding: 12px;
+    border: #262626 solid 3px;
+    border-radius: 5px;
+    color: #6f6d6e;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-utilitaire button:hover {
+    background-color: #262626;
+    color: #dfe0e2;
+}
+
+.menu-utilitaire i {
+    color: #6f6d6e;
+    margin-left: 5px;
+    display: inline;
+}
+
+.slider button,
+.services button,
+.demande-information button,
+.inscription-infolettre button,
+.inscription-infolettre-mobile button {
+    padding: 12px;
+    background-color: #ff002c;
+    border: #ff002c solid 3px;
+    border-radius: 5px;
+    color: #dfe0e2;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.services button {
+    width: 100%;
+}
+
+.demande-information button,
+.inscription-infolettre button,
+.inscription-infolettre-mobile button {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.demande-information form {
+    margin-top: 20px;
+}
+
+.inscription-infolettre button,
+.inscription-infolettre-mobile button {
+    font-size: 18px;
+}
+
+.formulaire-demande-infolettre button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6f6d6e;
+    border: #6f6d6e solid 3px;
+    color: #262626;
+}
+
+
+/* RETOUR EN HAUT (SCROLL TOP) */
+#scroll_to_top {
+    position: fixed;
+    width: 23px;
+    height: 23px;
+    bottom: 100px;
+    right: 48px;
+    z-index: 9999;
+}
+
+#scroll_to_top img {
+    width: 50px;
+}
+
+/* MENU 2 lignes : menu-utilitaire, navigation-pincipale */
+header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #dfe0e2;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+
+/* MENU UTILITAIRE */
+.menu-utilitaire {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 40% auto auto;
+    grid-template-rows: auto auto;
+    text-align: left;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.liens-menu-utilitaire {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: right;
+    color: #262626;
+}
+
+.liens-menu-utilitaire ul {
+    list-style-type: none;
+}
+
+.liens-menu-utilitaire li {
+    display: inline;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.liens-menu-utilitaire li a {
+    text-decoration: none;
+    color: #6f6d6e;
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.liens-menu-utilitaire ul li a i {
+    margin-left: 10px;
+}
+
+.liens-menu-utilitaire ul li a:hover,
+.liens-menu-utilitaire ul li a i:hover {
+    text-decoration: none;
+    color: #262626;
+}
+
+.logo-menu-utilitaire {
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 100%;
+    align-self: flex-end;
+}
+
+.logo-menu-utilitaire img {
+    display: inline;
+
+    max-height: 95px;
+}
+
+.coordonnees-menu-utilitaire {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    color: #262626;
+    align-self: flex-end;
+}
+
+.coordonnees-menu-utilitaire a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.coordonnees-menu-utilitaire .courriel {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.coordonnees-menu-utilitaire i {
+    margin-right: 12px;
+}
+
+.coordonnees-menu-utilitaire a,
+.coordonnees-menu-utilitaire i,
+.coordonnees-menu-utilitaire-mobile a,
+.coordonnees-menu-utilitaire-mobile i {
+    color: #6f6d6e;
+}
+
+.coordonnees-menu-utilitaire a:hover,
+.coordonnees-menu-utilitaire i:hover {
+    color: #262626;
+}
+
+.coordonnees-menu-utilitaire-mobile a i {
+    display: inline;
+    margin: 15px;
+}
+
+.coordonnees-menu-utilitaire-mobile a i:hover {
+    color: #262626;
+
+}
+
+.demande-information-menu-utilitaire {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: right;
+    align-self: flex-end;
+}
+
+
+/* NAVIGATION PRINCIPALE */
+.navigation-pincipale,
+.navigation-pincipale-mobile {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+    background-color: #262626;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 23px;
+    letter-spacing: .05rem;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.navigation-pincipale-mobile {
+    display: none;
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    background-color: #262626;
+}
+
+nav>ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav>ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    padding: 20px 30px;
+    color: #ffffff;
+}
+
+nav>ul>li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+
+.menu:hover {
+    border-top: 5px solid #ff002c;
+    background-color: rgba(112, 110, 111, 0.15);
+}
+
+.submenu li:hover a {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+nav input[type=checkbox]:checked+ul {
+    display: block;
+}
+
+
+/* SLIDER */
+.slider {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: left;
+    color: #dfe0e2;
+
+    margin-bottom: 4px;
+    min-height: auto;
+}
+
+
+/****** DÉBUT ANIMATION SLIDER ******/
+.slider-container {
+    grid-column: 1;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider-container .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    float: left;
+
+    animation: animation-slider 10s linear infinite;
+}
+
+.slider-container .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.slider-container .slider .slide .caption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 25%;
+    padding-left: 8%;
+}
+
+.slider-container .slider .slide .caption h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+}
+
+.slider-container .slider .slide .caption p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.slider-container .slider .slide.slide1 {
+    background-image: url(../img/Soudure-Mobile-Slide.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-container .slider .slide.slide2 {
+    background-image: url(../img/Mecanique-Industrielle-Slide.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slider-container .slider .slide.slide3 {
+    background-image: url(../img/Sous-Traitance_Slide.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slider-container .slider .slide.slide4 {
+    background-image: url(../img/Soudure-Mobile-Slide.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+@keyframes animation-slider {
+    0% {
+        left: 0;
+    }
+
+    28% {
+        left: 0%;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    61% {
+        left: -100%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    94% {
+        left: -200%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+/****** FIN ANIMATION SLIDER ******/
+
+
+/* À PROPOS */
+.a-propos {
+    display: grid;
+    grid-template-columns: auto 40%;
+
+    background-image: url(../img/Apropos_bg.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    background-attachment: fixed;
+
+    padding-left: 80px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    min-height: 600px;
+}
+
+.texte-a-propos {
+    grid-column: 1;
+    text-align: left;
+    color: #dfe0e2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    align-self: center;
+}
+
+.image-a-propos {
+    grid-column: 2;
+    text-align: center;
+    justify-self: end;
+}
+
+/* SOUDURE MOBILE */
+/* MÉCANIQUE INDUSTRIELLE */
+/* SOUS-TRAITANCE */
+.soudure-mobile,
+.mecanique-industrielle,
+.sous-traitance {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto;
+    background-color: #262626;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+.picto-soudure-mobile,
+.picto-mecanique-industrielle,
+.picto-sous-traitance {
+    grid-column: 1;
+    text-align: center;
+    /*background-color:sienna;*/
+
+    margin-top: 35px;
+    justify-self: start;
+    align-self: end;
+}
+
+.texte-soudure-mobile,
+.texte-mecanique-industrielle,
+.texte-sous-traitance {
+    grid-column: 2;
+    text-align: left;
+    color: #dfe0e2;
+    /*background-color: darkgoldenrod;*/
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+    align-self: center;
+}
+
+
+/* RÉALISATIONS */
+.realisations {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.texte-realisations {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.images-realisations {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #262626;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vignette-realisations-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 8px;
+    border-right: #dfe0e2 solid 4px;
+    border-bottom: #dfe0e2 solid 4px;
+    border-left: none;
+}
+
+.vignette-realisations-2 {
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 4px;
+    border-right: #dfe0e2 solid 4px;
+    border-bottom: #dfe0e2 solid 8px;
+    border-left: none;
+}
+
+.vignette-realisations-3 {
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 4px;
+    border-right: #dfe0e2 solid 4px;
+    border-bottom: #dfe0e2 solid 8px;
+    border-left: #dfe0e2 solid 4px;
+}
+
+.vignette-realisations-4 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 8px;
+    border-right: #dfe0e2 solid 4px;
+    border-bottom: #dfe0e2 solid 8px;
+    border-left: #dfe0e2 solid 4px;
+}
+
+.vignette-realisations-5 {
+    grid-column: 5;
+    grid-row: 1;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 8px;
+    border-right: #dfe0e2 solid 4px;
+    border-bottom: #dfe0e2 solid 4px;
+    border-left: #dfe0e2 solid 4px;
+
+}
+
+.vignette-realisations-6 {
+    grid-column: 6;
+    grid-row: 1;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 8px;
+    border-right: none;
+    border-bottom: #dfe0e2 solid 4px;
+    border-left: #dfe0e2 solid 4px;
+}
+
+.vignette-realisations-7 {
+    grid-column: 5 / span 2;
+    grid-row: 2;
+
+    width: 100%;
+    border-top: #dfe0e2 solid 4px;
+    border-right: none;
+    border-bottom: #dfe0e2 solid 8px;
+    border-left: #dfe0e2 solid 4px;
+}
+
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: 40% auto;
+    background-color: #262626;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-right: 80px;
+}
+
+.image-services {
+    grid-column: 1;
+}
+
+.image-services img {
+    height: 100%;
+}
+
+.texte-services {
+    grid-column: 2;
+    text-align: left;
+    color: #dfe0e2;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    align-self: center;
+}
+
+.services ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05rem;
+
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.services ul li {
+    list-style-image: url(../img/Puce-Losange-Rouge.svg);
+    text-transform: uppercase;
+    list-style-position: outside;
+    margin: 0px 0px 0px 1em;
+}
+
+/* TÉMOIGNAGES */
+.temoignages {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #dfe0e2;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.texte-temoignages {
+    grid-column: 1;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.cards-temoignages {
+    grid-column: 1;
+    text-align: center;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-temoignages p {
+    padding: 15px;
+}
+
+.cards-temoignages img {
+    margin-bottom: 35px;
+}
+
+.cards-temoignages .name {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cards-temoignages .name-entreprise {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* DEMANDE INFORMATION */
+.demande-information {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto;
+
+    background-image: url(../img/Contact_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-right: 80px;
+}
+
+.contenu-demande-information {
+    grid-column: 2;
+    text-align: left;
+    color: #dfe0e2;
+    background: linear-gradient(to right, rgba(38, 38, 38, 1), rgba(38, 38, 38, 0));
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 35px;
+    padding-right: 0;
+    align-self: center;
+}
+
+.formulaire-demande-information input,
+.formulaire-demande-information textarea {
+    color: #dfe0e2;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    border-radius: 3px;
+    border: 1px solid #dfe0e2;
+    background: transparent;
+    padding: 8px;
+    margin-top: 7px;
+    width: 100%;
+}
+
+.formulaire-demande-information input {
+    margin-bottom: 10px;
+}
+
+.formulaire-demande-infolettre ::placeholder,
+.formulaire-demande-information ::placeholder {
+    color: #6f6d6e;
+}
+
+.formulaire-demande-information label,
+.inscription-infolettre label,
+.formulaire-demande-infolettre label {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dfe0e2;
+}
+
+/* INSCRIPTION INFOLETTRE  Non visible en version Desktop */
+.inscription-infolettre-mobile {
+    display: none;
+}
+
+/* PIED DE PAGE */
+.pied-page {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto;
+    background-color: #262626;
+
+    margin-top: 4px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 35px;
+}
+
+.logo-coordonnees {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    color: #dfe0e2;
+
+    margin-top: 35px;
+    align-self: flex-start;
+}
+
+.logo-coordonnees img {
+    max-height: 95px;
+    margin-bottom: 16px;
+}
+
+.logo-coordonnees address {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.pied-page-col-2 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    color: #dfe0e2;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.menu-acces-rapide {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    color: #dfe0e2;
+
+    margin-top: 35px;
+    align-self: flex-start;
+}
+
+.menu-acces-rapide ul {
+    list-style-type: none;
+}
+
+.menu-acces-rapide li {
+    font-family: 'Oswald', sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.menu-acces-rapide li a,
+.inscription-infolettre a {
+    text-decoration: none;
+    color: #dfe0e2;
+}
+
+.menu-acces-rapide li a:hover {
+    text-decoration: none;
+    color: #6f6d6e;
+}
+
+.inscription-infolettre {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    color: #dfe0e2;
+    margin-top: 35px;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.formulaire-demande-infolettre input,
+.formulaire-demande-infolettre textarea {
+    color: #dfe0e2;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    border-radius: 3px;
+    border: 1px solid #dfe0e2;
+    background: transparent;
+    padding: 8px;
+    margin-top: 7px;
+    width: 100%;
+}
+
+.suivez-nous i {
+    margin-left: 5px;
+}
+
+.suivez-nous a :hover {
+    color: #6f6d6e;
+}
+
+
+.copyright {
+    text-align: center;
+    color: #dfe0e2;
+    background-color: #6f6d6e;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+.copyright a {
+    color: #dfe0e2;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #262626;
+}
+
+.pied-page-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #scroll_to_top {
+        display: none;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 58px;
+        margin-bottom: 20px;
+        color: #6f6d6e;
+    }
+
+    /* SLIDER */
+    .slider-container .slider .slide .caption {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        right: 0%;
+        padding-left: 8%;
+        background: linear-gradient(to right, rgba(38, 38, 38, 1), rgba(38, 38, 38, 0));
+        height: auto;
+    }
+
+    .caption button {
+        margin-bottom: 20px;
+    }
+
+    .slider-container .slider .slide.slide1 {
+        background-image: url(../img/Soudure-Mobile-Slide-Mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slider-container .slider .slide.slide2 {
+        background-image: url(../img/Mecanique-Industrielle-Slide-Mobile.jpg);
+
+    }
+
+    .slider-container .slider .slide.slide3 {
+        background-image: url(../img/Sous-Traitance_Slide-Mobile.jpg);
+
+    }
+
+    .slider-container .slider .slide.slide4 {
+        background-image: url(../img/Soudure-Mobile-Slide-Mobile.jpg);
+
+    }
+
+    /* SOUDURE MOBILE */
+    /* MÉCANIQUE INDUSTRIELLE */
+    /* SOUS-TRAITANCE */
+    .soudure-mobile,
+    .mecanique-industrielle,
+    .sous-traitance {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+
+        padding-right: 0;
+    }
+
+    .picto-soudure-mobile,
+    .picto-mecanique-industrielle,
+    .picto-sous-traitance {
+        grid-column: 1;
+        grid-row: 2;
+
+        margin-top: 0;
+    }
+
+    .texte-soudure-mobile,
+    .texte-mecanique-industrielle,
+    .texte-sous-traitance {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        color: #dfe0e2;
+
+        margin: 35px;
+    }
+
+
+    /* À PROPOS */
+    .a-propos {
+        display: grid;
+        grid-template-columns: auto;
+
+        padding-left: 0;
+        height: auto;
+    }
+
+    .texte-a-propos {
+        grid-column: 1;
+        margin: 35px;
+    }
+
+    .image-a-propos {
+        display: none;
+    }
+
+    /* RÉALISATIONS */
+
+    .texte-realisations {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        height: auto;
+    }
+
+    /* SERVICES */
+    .services {
+        display: grid;
+        grid-template-columns: auto;
+
+        padding-right: 0;
+    }
+
+    .image-services {
+        display: none;
+    }
+
+    .texte-services {
+        grid-column: 1;
+        text-align: left;
+        margin: 35px;
+    }
+
+    /* TÉMOIGNAGES */
+    .temoignages {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .texte-temoignages {
+        grid-column: 1;
+        text-align: center;
+        margin: 35px;
+    }
+
+    .cards-temoignages {
+        grid-column: 1;
+        margin-bottom: 35px;
+    }
+
+    /* DEMANDE INFORMATION */
+    .demande-information {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        background-image: url(../img/Contact_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        padding-right: 0;
+    }
+
+    .contenu-demande-information {
+        grid-column: 1;
+        text-align: left;
+        background: rgba(38, 38, 38, .45);
+
+        margin: 0;
+        padding: 35px;
+        align-self: center;
+    }
+
+    /* INSCRIPTION INFOLETTRE */
+    .inscription-infolettre-mobile {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        text-align: center;
+        background-color: #262626;
+
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: unset;
+    }
+
+    .inscription-infolettre-mobile h3 {
+        margin-bottom: 8px;
+    }
+
+    .contenu-inscription-infolettre-mobile {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 35px;
+    }
+
+    .inscription-infolettre-mobile button {
+        margin-bottom: 0;
+    }
+
+
+    /* MENU */
+    .navigation-pincipale {
+        display: none;
+    }
+
+    .navigation-pincipale-mobile {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        display: inherit;
+    }
+
+    .label-menu-mobile {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+
+    }
+
+    .logo-menu-mobile {
+        grid-column: 1;
+        text-align: left;
+        background: rgba(38, 38, 38, .45);
+
+        align-self: center;
+        padding-left: 35px;
+    }
+
+    .logo-menu-mobile img {
+        max-width: 95px;
+    }
+
+    .menu-menu-mobile {
+        padding-right: 35px;
+        justify-self: flex-end;
+        margin: 0;
+    }
+
+    .navigation-pincipale-mobile i {}
+
+
+    /* PIED DE PAGE */
+
+    .pied-page {
+        display: none;
+    }
+
+
+    .pied-page-mobile {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        background-color: #dfe0e2;
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 12px;
+
+        display: inherit;
+        height: 300px;
+    }
+
+
+    .logo-coordonnees-mobile {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+
+        background-color: #ff002c;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo-coordonnees-mobile img {
+        max-height: 75px;
+        margin-bottom: 15px;
+    }
+
+    .coordonnees-menu-utilitaire-mobile {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #dfe0e2;
+
+
+        align-self: flex-end;
+        display: inherit;
+    }
+
+    .copyright {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #6f6d6e;
+
+
+        align-self: flex-end;
+        display: inherit;
+    }
+
+
+    .menu-acces-rapide-mobile {
+        grid-column: 1;
+        grid-row: 2;
+
+        display: none;
+    }
+
+    main{
+        margin-bottom: 300px;
+    }
+
+    /* MENU */
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        background-color: #dfe0e2;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        height: auto;
+    }
+
+
+    .menu-utilitaire {
+        display: none;
+    }
+
+    .menu-utilitaire a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .menu-mobile {
+        display: block;
+        color: #dfe0e2;
+        background-color: #262626;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li,
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a,
+    nav ul li:hover a {
+        padding: 10px 0px;
+    }
+
+    nav li:hover .submenu {
+        display: block;
+        position: static;
+    }
+
+
+
+}
